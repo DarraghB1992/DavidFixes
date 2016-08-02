@@ -190,22 +190,7 @@ footer p {
 
 
 
-/* ======= Maps Section ======= */
 
-.map-container {
-    position: relative;
-}
- 
-.zoom-controls {
-    position: absolute;
-    top: 1em;
-    left: 0.6em;
-}
- 
-.zoom-button {
-    padding: 4px 8px;
-    opacity: 0.8;
-}
 /* ======= Gigs Section ======= */
 .gigs-section .container {
   max-width: 860px;
@@ -461,4 +446,26 @@ footer p {
 }
 .music-section .music-action {
   margin-top: 30px;
+}
+
+/* ======= Maps Section ======= */
+
+.map-container {
+    position: relative;
+}
+ 
+.zoom-controls {
+    position: absolute;
+    top: 1em;
+    left: 0.6em;
+}
+ 
+.zoom-button {
+    padding: 4px 8px;
+    opacity: 0.8;
+}
+select {
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1.4em;
 }

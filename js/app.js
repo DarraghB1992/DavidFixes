@@ -1,6 +1,9 @@
-angular.module('mybandApp', ['ngRoute','mybandControllers']);
+//Added 'formDirectives to line 2 , without this our diretives were being ignored and the
+//information needed to render the map was never sent ! 
+
+angular.module('mybandApp', ['ngRoute','mybandControllers', 'formDirectives'])
 // configure our routes
-angular.module('mybandApp').config(function($routeProvider) {
+.config(function($routeProvider) {
 	$routeProvider
 		// route for the home page
 		.when('/', {
