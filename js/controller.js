@@ -2,7 +2,9 @@
 then add the home, about and contact controllers passing
 in the title via $scope.title*/
 
-angular.module('mybandControllers',[])
+// Session 2, Added the var mybandApp so we could link the controllers with the service
+
+var mybandApp = angular.module('mybandControllers',[])
 .controller('HomeController', function($scope) {
 
     $scope.title ="Home"
@@ -15,10 +17,7 @@ angular.module('mybandControllers',[])
 
     $scope.title ="Music"
 })
-.controller('GigsController', function($scope) {
-
-    $scope.title ="Gigs"
-})   
+  
 .controller('ThebandController', function($scope) {
 
     $scope.title ="The Band"
@@ -27,6 +26,14 @@ angular.module('mybandControllers',[])
 
     $scope.title ="Contact"
 })
+
+.controller('GigsController' ,function($scope, forecast) {
+    $scope.title = "Gigs"
+    forecast.success(function(data) {
+        $scope.fiveDay = data;
+    });
+})
+
 
 .controller('FooterController',function($scope) {
 //
@@ -43,4 +50,6 @@ $scope.maps = [{
 }];
 $scope.map = $scope.maps[0];
 });
+
+
 

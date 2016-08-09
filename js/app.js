@@ -1,5 +1,5 @@
 //Added 'formDirectives to line 2 , without this our diretives were being ignored and the
-//information needed to render the map was never sent ! 
+//information needed to render the map was never sent!
 
 angular.module('mybandApp', ['ngRoute','mybandControllers', 'formDirectives'])
 // configure our routes
@@ -43,4 +43,4 @@ angular.module('mybandApp', ['ngRoute','mybandControllers', 'formDirectives'])
 
 		
 		.otherwise({redirectTo: '/'}); //if not above path
-});
+	});

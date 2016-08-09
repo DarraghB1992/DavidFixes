@@ -1,4 +1,4 @@
-//create forDirective
+//create forDirective 
 angular.module('formDirectives',[])
 .directive('ngSubValid', [function() {
 	var FOCUS_CLASS = "ng-subinvalid";
@@ -24,7 +24,7 @@ angular.module('formDirectives',[])
 			});
 		}
 	}
-	
+
 }])
 .directive('makeMap', function() {
 	var directive = {
